@@ -15,12 +15,26 @@ namespace _13._3_tdd_Geometrie
 
         public int Breite { 
             get { return breite; } 
-            set { breite = value; }
+            set
+            {
+                if (value<0)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                breite = value;
+            }
             
         }
         public int Hoehe { 
             get { return hoehe; } 
-            set { hoehe = value; }
+            set 
+            {
+                if (value<0)
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+                hoehe = value;
+            }
         }
 
         public void Skalieren(double faktor)

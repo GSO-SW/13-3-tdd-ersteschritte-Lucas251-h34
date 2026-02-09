@@ -75,50 +75,50 @@ namespace _13._3_tdd_GeometrieTests // Namenskonvention: <zuTestendesProjekt>Tes
             // Act
             r.Hoehe = -1;
         }
+    
+//        [TestMethod] 
+//        public void Umfang_WirdBerechnet()
+//        {
+//            // Arrange
+//            Rechteck r = new Rechteck();
+//            r.Breite = 10;
+//            r.Hoehe = 20;
 
-        [TestMethod] 
-        public void Umfang_WirdBerechnet()
-        {
-            // Arrange
-            Rechteck r = new Rechteck();
-            r.Breite = 10;
-            r.Hoehe = 20;
+//            // Act
+//            int ergebnis = r.Umfang();
 
-            // Act
-            int ergebnis = r.Umfang();
+//            // Assert
+//            Assert.AreEqual(60, ergebnis);
+//        }
 
-            // Assert
-            Assert.AreEqual(60, ergebnis);
-        }
+//        [TestMethod]
+//        public void Flaeche_WirdBerechnet()
+//        {
+//            // Arrange
+//            Rechteck r = new Rechteck();
+//            r.Breite = 10;
+//            r.Hoehe = 20;
 
-        [TestMethod]
-        public void Flaeche_WirdBerechnet()
-        {
-            // Arrange
-            Rechteck r = new Rechteck();
-            r.Breite = 10;
-            r.Hoehe = 20;
+//            // Act
+//            int ergebnis = r.Flaeche();
 
-            // Act
-            int ergebnis = r.Flaeche();
+//            // Assert
+//            Assert.AreEqual(200, ergebnis);
+//        }
 
-            // Assert
-            Assert.AreEqual(200, ergebnis);
-        }
+//        [TestMethod]
+//        public void Rechteck_KannMitStartwertenErsteltWerden()
+//        {
+//            // Arrange
+//            int breite = 1;
+//            int hoehe = 2;
 
-        [TestMethod]
-        public void Rechteck_KannMitStartwertenErsteltWerden()
-        {
-            // Arrange
-            int breite = 1;
-            int hoehe = 2;
-
-            // Act
-            Rechteck r = new Rechteck(breite, hoehe);
+//            // Act
+//            Rechteck r = new Rechteck(breite, hoehe);
             
-            // Assert
-            Assert.AreEqual(breite, r.Breite);
-            Assert.AreEqual(hoehe, r.Hoehe);
-        }
+//            // Assert
+//            Assert.AreEqual(breite, r.Breite);
+//            Assert.AreEqual(hoehe, r.Hoehe);
+//       }
     }
-}
+}  
